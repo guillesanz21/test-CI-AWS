@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    image: "course.dockerk8.web"
+    image: "guillesanz21/course.dockerk8.web"
     build: 
       context: .
       dockerfile: Dockerfile.dev
@@ -12,7 +12,7 @@ services:
       - .:/home/node/app
 
   tests:
-    image: "course.dockerk8.tests"
+    image: "guillesanz21/course.dockerk8.tests"
     build: 
       context: .
       dockerfile: Dockerfile.dev
