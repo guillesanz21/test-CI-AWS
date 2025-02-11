@@ -1,6 +1,6 @@
 # Multi-sep build dockerfile
 # Phase 1
-FROM node:16-alpine as builder
+FROM node:lts-alpine AS builder
 WORKDIR '/app'
 COPY package.json .
 RUN npm install
